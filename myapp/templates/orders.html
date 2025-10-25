@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Order Now {% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'yourapp/style1.css' %}">
+ <div class="container-fluid bg-secondary py-5 rounded">
+        <div class="bg-light">
+            <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="text-center text-light bg-dark p-2">
+                   <h1>Shop Now</h1>
+                </div>
+            </div>
+             <div class="container">
+    <h1>Order Pure Honey & Ghee Online<button id="darkModeBtn">🌙Dark Mode</button></h1>
+
+    <div class="products">
+      
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHbKnwp0nS8xH4EvDooi_Q6JSNb7SXBKvzrw&s" alt="Pure Honey">
+        <h2>Pure Honey</h2>
+        <p>100% Natural | 250g, 500g, 1kg Available</p>
+        <p class="price">Rs. 1000 / 500g</p>
+        <a href="{% url 'order_form' %}" class="order-btn">Order Now</a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSCJm-aR3Vfgfnmauoexa3gs4iCO48OmjwdQ&s" alt="Desi Ghee">
+        <h2>Pure Desi Ghee</h2>
+        <p>Fresh & Organic | 500g, 1kg Available</p>
+        <p class="price">Rs. 1500 / 500g</p>
+        <a href="{% url 'order_form' %}" class="order-btn">Order Now</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>Contact us: 0308-3387190 | <span style="color:chocolate;">Delivery Free on 2 kg</span></p>
+  </footer>
+
+
+                <!-- <div class="container">
+<div class="table-responsive-xl pb-6 pb-xl-0">
+<div class="flex-nowrap row">
+<div class="col-xl-4 col-lg-6 col-12">
+<div class="p-8 mb-3 rounded" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSCJm-aR3Vfgfnmauoexa3gs4iCO48OmjwdQ&s');
+background-repeat: no-repeat; background-size: cover; height: 200px;">
+<h3 class="mb-0 fw-bold text-light">
+  Best quality <br>Best prize  
+</h3>
+<div class="mb-5 mt-4 fs-5">
+ <p class="mb-0 text-light">Check first and then pay</p>
+ <span class="text-light">Give us
+    <a href="" class="rev"><span class="fw-bold">Reviews</span></a>
+ </span>   
+</div>
+
+</div>
+</div>    
+<div class="col-xl-4 col-lg-6 col-12">
+<div class="rounded" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHbKnwp0nS8xH4EvDooi_Q6JSNb7SXBKvzrw&s');
+background-repeat: no-repeat; background-size: cover; height: 200px;">
+<h3 class="mb-0 fw-bold">
+  Say Yes to <br>Seasons' Fresh  
+</h3>
+<div class="mt-4 mb-5 fs-5">
+  <p class="fs-5 mb-0">
+  Refresh your day <br>the honey way  
+  </p>  
+</div>
+
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-12">
+<div class="p-8 mb-3 rounded" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSECIx8c7eJtYc0D5_IvHCZoYwD2c2E1ogonA&s');
+background-repeat: no-repeat; background-size: cover; height: 200px;">
+<h3 class="mb-0 fw-bold">
+ When in doubt <br>eat honey  
+</h3>
+<div class="mt-4 mb-5 fs-5">
+  <p class="fs-5 mb-0">
+Enjoy a spoon<br> every day  
+  </p>  
+</div>
+
+</div>
+</div>
+</div> -->
+<!-- </div> -->
+<!--table-->
+<!-- </div> -->
+<!-- <br><br>container -->
+  <!-- </section> -->
+<hr>
+               
+                <!-- <div class="row">
+
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mx-1">
+                        <div>
+                            <h3>Select your order <span style="font-size: 30px;">😊</span></h3>
+                            <h4>You can select both of them</h4>
+                        </div>
+                    </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="mx-2 py-2">
+                        <input type="checkbox" style="cursor: pointer;">
+                        <span style="font-size: 50px;">🍯</span>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="py-2">
+                        <input type="checkbox" style="cursor: pointer;">
+                        <span style="font-size: 50px;">🧈</span>
+                    </div>
+                </div>
+                <hr> -->
+                
+              <!-- </div> -->
+                <!--row-->
+
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 py-2">
+                    <div class="text-center">
+                        <h2 class="text-success">Order details</h2>
+                    </div>
+                </div>
+
+                <div class="row">  
+                
+                <div class="col p-2 text-center">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div>
+                            <h6>Delivery Options</h6>
+                            <h6><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+</svg>Punjab, Faisalabad</h6>
+                         <hr>
+                             <h6><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-globe-americas mx-1" viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+</svg>Delivery <span style="color: white; font-size: 20px;">Free</span></h6>
+                       <h6 class="mx-3" style="font-size: 14px;">Guarented in "3" working days</h6>
+                       
+                       <h6 class="py-2"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cash-stack mx-1" viewBox="0 0 16 16">
+  <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+  <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z"/>
+</svg>Cash on Delivery Available</h6>
+                          <hr>
+                          <h6>Check then pay</h6>
+
+                          <h6><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-shield-check mx-1" viewBox="0 0 16 16">
+  <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+  <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+</svg>Life time Warranty</h6>
+                        
+                         <h2><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="green" class="bi bi-whatsapp my-2 mx-1" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>0308-3387190</h2>
+<hr>
+                       <h6 style="font-size: 14px;">Sold by</h6> 
+                        <h5>Jilani Orgain Food</h5>
+                        <h5>Chat on Whasapp</h5>
+                        <hr>
+
+                        
+                        <!-- <table class="table-bordered border-dark p-2">
+                            <tr>
+                                <th class="p-2">Positive seller ratings <br><span style="font-size: 22px;">100%</span></th>
+                                <th class="p-2">Ship on Time <br><span style="font-size: 22px;">100%</span></th>
+                                <th class="p-2">Chat response <br><span style="font-size: 20px;">frequently</span></th>
+                            </tr>
+                        </table> -->
+                    </div>
+                </div><!--col-->
+
+                </div><!--row-->
+        </div><!--main-->
+    </div><!--container-->
+
+    <script>
+  const btn = document.getElementById("darkModeBtn");
+  const html = document.documentElement;
+
+  // Load saved mode (if any)
+  if (localStorage.getItem("theme") === "dark") {
+    html.setAttribute("data-theme", "dark");
+    btn.textContent = "☀️ Light Mode";
+  }
+
+  btn.addEventListener("click", () => {
+    if (html.getAttribute("data-theme") === "dark") {
+      html.removeAttribute("data-theme");
+      localStorage.setItem("theme", "light");
+      btn.textContent = "🌙 Dark Mode";
+    } else {
+      html.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+      btn.textContent = "☀️ Light Mode";
+    }
+  });
+</script>
+
+
+{% endblock %}

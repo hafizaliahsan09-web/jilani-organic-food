@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_2LRPgjLUKjiHf_udux3ZTqOanCoySBSVQ&s">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+    <title>{% block title %}Honey World{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+</head>
+<body>
+
+    
+    
+ <nav class="navbar navbar-expand-lg navbar-dark" style="position: sticky; top: 0; z-index: 5;">
+    <div class="container-fluid">
+            <a class="navbar-brand ms-5" href=""><img src="{% static 'images/logo1.png' %}" alt="" height="70" width="70"></a>
+
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mx-auto">
+          <li class="nav-item mx-3">
+                <a class="nav-link rounded-pill active text-dark bg-info" href="{% url 'home' %}"><b>Home</b></a>
+        </li>
+        <li class="nav-item mx-3">
+            <a class="nav-link rounded-pill text-light" id="light" href="#about"><b>About</b></a>
+        </li>
+          <li class="nav-item mx-3 dropdown">
+            <div class="dropdown">
+            <a href="#services" class="nav-link rounded-pill text-light dropdown-toggle" role="button" data-bs-toggle="dropdown" id="light"><b>Services</b></a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="#honey" class="text-info text-decoration-none">Pure Honey</a></li>
+                <li class="dropdown-item"><a href="#ghee" class="text-info text-decoration-none">Pure Ghee</a></li>
+            </ul>
+            </div>        
+        </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link rounded-pill text-light" id="light" href="#contact"><b>Contact</b></a>
+        </li>
+        <li class="nav-item mx-3">
+        
+            <a class="nav-link" href="{% url 'newpage' %}"><button type="button" class="btn btn-info rounded-pill"><b style="color: black;">Order Now</b></button></a>
+
+        </li>
+           </ul>
+      </div>
+    </div>
+</nav>
+
+<main>
+    {% block content %}
+    
+    {% endblock %}
+
+  </main>
+ <section class="py-5" id="contact">
+ <div class="container">
+   <div class="five">
+<div class="col">
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+    <div class="text-center">
+    <h1 class="mt-5 mx-3 six"><b>Administrator : M.Umair Jilani</b></h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+  <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+    <div class="py-2">
+      <h3 class="mt-5 mx-3">Phone : 0308 3387190</h3>
+    </div>
+  </div>
+
+  <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
+    <div class="py-2">
+      <h3 class="mt-5 mx-3">Address : <br>&nbsp;&nbsp;&nbsp;Chak No.66 J.B Dhandra Dr.Maan Town FSD</h3>
+    </div>
+  </div>
+
+  </div><!--col2-->
+
+  <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">
+    <div class="mt-3">
+      <img src="{% static 'images/image1.jpeg' %}" alt="" height="200" width="200" class="seven">
+    </div>
+  </div>
+  </div><!--row-->
+
+
+</div><!--col-->
+</div><!--main-->
+ </div><!--container-->
+  </section>
+
+  <section class="py-5 bg-secondary rounded-5">
+ <div class="container-fluid">
+
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+      <div>
+        <img src="{% static 'images/logo1.png' %}" alt="" height="200" width="200">
+      </div>
+    </div>
+
+ <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <div class="text-center">
+    <h3><b>&#169; All Rights Reserved by Jilani Organic Food.</b></h3>
+  </div>
+ </div>
+
+ <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <div class="text-center">
+    <h4>Since 2024-Present</h4>
+  </div>
+ </div>
+ </div><!--container-->
+  </section>
+
+</body>
+</html>    

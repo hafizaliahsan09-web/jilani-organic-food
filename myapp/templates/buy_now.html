@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}Order form{% endblock %}
+
+{% block content %}
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+     <div class="container">
+
+  <form method="post">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <label for="Name">Name:</label><br>
+      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required><br>
+    </div>
+    <div class="form-group">
+      <label for="Name">Father Name:</label><br>
+      <input type="text" class="form-control" id="name" placeholder="Enter Father Name" name="name" required><br>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label><br>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required><br>
+    </div>
+    <div class="form-group">
+      <label for="Phone">Phone:</label><br>
+      <input type="number" class="form-control" id="phone" placeholder="Enter Ph no." name="phone" required><br>
+    </div>
+    <div class="form-group">
+      <label for="Address">Address:</label><br>
+      <input type="text" class="form-control" id="address" placeholder="Enter Address" name="address" required><br>
+    </div>
+    <!-- <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+    </div> -->
+  
+        <label for="Quantity">Quantity:</label><br>
+        <input type="radio">
+
+        <span>250g</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio">
+        <span>500g</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio">
+        <span>1000g</span>
+        <!-- <input type="number" name="quantity" min="1" required><br><br> -->
+      <br>
+
+    <!-- <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div> -->
+    <button type="submit" class="btn btn-dark">Submit</button>
+  </form>
+</div>
+
+{% endblock %}
